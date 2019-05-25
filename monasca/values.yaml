@@ -77,7 +77,11 @@ influxdb:
 
 mysql:
   enabled: true
-  imageTag: "5.6"
+  image:
+    repository: "mariadb"
+    tag: "10.0"
+    pullPolicy: IfNotPresent
+  imageTag: "10.0"
   imagePullPolicy: IfNotPresent
   persistence:
     enabled: false
