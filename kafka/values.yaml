@@ -26,7 +26,7 @@ watcher:
   stay_alive_on_failure: false
 image:
   repository: monasca/kafka
-  tag: 0.9.0.1-2.11-1.1.6
+  tag: 2.2.0-2.11
   pullPolicy: IfNotPresent
 service:
   type: ClusterIP
