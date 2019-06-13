@@ -17,6 +17,8 @@ spec:
         app: {{ template "fullname" . }}
         component: "{{ .Values.memcached.name }}"
     spec:
+      securityContext:
+        runAsUser: {{ .Values.memcached.uid }}
       containers:
       - name: memcached
         image: "{{ .Values.memcached.image.repository }}:{{ .Values.memcached.image.tag }}"

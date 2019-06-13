@@ -240,9 +240,10 @@ api:
 memcached:
   name: memcached
   enabled: true
+  uid: 11211
   image:
     repository: memcached
-    tag: 1.5.15-alpine
+    tag: 1.5.16-alpine
     pullPolicy: IfNotPresent
   replicaCount: 1
   service:
